@@ -7,33 +7,81 @@
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
+	body {
+		min-width: 320px;
+	}
 
 	body,input,textarea,select {
-		font-size: 13pt;
+		font-size: 12pt;
+		line-height: 1.5em;
 	}
-	
+
+	h2 {
+		font-size: 1.5em;
+		letter-spacing: -1px;
+	}
+
+	/* Box */
+
+		.box {
+			padding: 1em;
+		}
+
+			.box.style2 {
+				padding: 1.5em 1.25em 1.5em 1.25em;
+				background-color: rgba(255,255,255,0.9);
+			}
+
 	/* Main */
-		
+
 		.main {
 		}
-		
-			.main.style2 {
+
+
+
+
+			.main.style1 {
+				padding: 4em 15px 4em 15px;
 			}
-			
+
+				.main.style1 h2 {
+					font-size: 3em;
+					letter-spacing: -3px;
+				}
+				.main.style2:before,
+				.main.style2:after {
+					display: none !important;
+				}
+
+				.main.style2 .button.anchored {
+					display: none;
+				}
+
 				.main.style2 .content {
-					width: 50%;
-				}
-			
-					.main.style2.right .content {
-						left: 50%;
-					}
-
-				.main.style2.inactive {
+					width: 100%;
+					left: 0% !important;
+					text-align: center;
 				}
 
-					.main.style2.inactive .content {
-					}
+				.main.style2 .tmp {
+					width: 100%;
+					height: 10em;
+					background-size: cover;
+				}
 
-						.main.style2.inactive.left .content {
-							left: -50%;
-						}
+				.main.style2.dark .content {
+  					max-height: 100%;
+				}
+
+			.main.style3 {
+				text-align: center;
+				padding: 3em 10px 3em 10px;
+			}
+
+			.content.box.style2.two {
+				width:70%;
+			}
+
+			#contact .container.content {
+				  margin-top: 180px;
+			}

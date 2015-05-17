@@ -23,6 +23,8 @@
 
 	.img {
 		max-width:100%;
+		width:420px;
+		height: 315px;
 	}
 
 	.main.style2.dark .content{
@@ -1057,6 +1059,9 @@
 					padding: 0.6em;
 
 				}
+		#contact .container.content {
+				  margin-top: 100px;
+			}
 
 		#footer .menu {
 			position: absolute;
@@ -1273,4 +1278,4 @@
 				opacity: 1.0 !important;
 			}
 
-
+}

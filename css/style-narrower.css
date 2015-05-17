@@ -41,6 +41,10 @@
 						.main.style2.inactive.left .content {
 							left: -60%;
 						}
+			.main.fullscreen {
+				height: auto !important;
+				min-height: 50% !important;
+			}
 						
 /*********************************************************************************/
 /* Footer                                                                        */

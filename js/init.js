@@ -44,30 +44,6 @@
 					$body.removeClass('is-touch');
 
 			});
-		$("#submit").click(function() {
-			var name = $("#name").val();
-			var email = $("#email").val();
-			var message = $("#message").val();
-			var contact = $("#contact").val();
-			console.log(name, email, message, contact);
-			// Checking for blank fields.
-			if (name == '' || email == '') {
-			alert("Please Fill Required Fields");
-			} else {
-			// Returns successful data submission message when the entered information is stored in database.
-			$.post("../email.php", {
-			name1: name,
-			email1: email,
-			message1: message
-			}, function(data) {
-				console.log(data);
-			$("#returnmessage").append(data); // Append returned message to message paragraph.
-			if (data == "Your Query has been received, We will contact you soon.") {
-			$("#form")[0].reset(); // To reset form fields on success.
-			}
-			});
-			}
-		});
 		// Forms (IE<10).
 			var $form = $('form');
 			if ($form.length > 0) {
