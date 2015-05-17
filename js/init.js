@@ -55,7 +55,7 @@
 			alert("Please Fill Required Fields");
 			} else {
 			// Returns successful data submission message when the entered information is stored in database.
-			$.post("../email.php", {
+			$.get("../email.php", {
 			name1: name,
 			email1: email,
 			message1: message
