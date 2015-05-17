@@ -26,7 +26,7 @@
 	}
 
 	.main.style2.dark .content{
-		max-height: 50%;
+		max-height: 100%;
 	}
 
 		body.is-loading *,
